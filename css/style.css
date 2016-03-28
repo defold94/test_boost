@@ -1,0 +1,172 @@
+@font-face {
+	font-family: "Neue";
+	  src: url('../fonts/Baron_Neue.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+*,
+*:before,
+*:after{
+	box-sizing: border-box;
+}
+
+.main_nav{
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+#main-nav {
+	margin: 0; 
+	padding: 0; 
+	display: inline-block;
+}
+
+#main-nav li {
+	list-style: none; 
+	margin: 0; 
+	padding: 0; 
+	float: left; 
+	align-items: center;
+}
+
+#main-nav li:first-child {
+	margin-left: 10px;
+}
+
+#main-nav a {
+	padding: 14px 15px; 
+	color: black;
+	line-height: 2;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#main-nav a:after {
+	display: block;
+    content: "";
+    height: 1px;
+    width: 0%;
+    background-color: black;
+    transition: width .3s ease-in-out;
+}
+
+#main-nav a:hover:after, 
+a:focus:after {
+    width: 100%;
+}
+
+.row:after {
+    clear: both;
+    display: table;
+    content: "";
+}
+
+.col-4 {
+    float: left;
+    width: 31.333333%;
+    margin-right: 3%;
+}
+
+.col-4:last-of-type {
+    margin-right: 0;
+}
+
+.img_item {
+    max-width: 100%;
+    vertical-align: top;
+    margin-bottom: 15px;
+}
+
+#pagewrap {
+	margin: 0px auto; 
+	max-width: 980px;
+}
+
+#header {
+	position: relative;
+}
+
+#site-description {
+	font-family: "Neue", serif; 
+	line-height: 90px;
+    color: #000!important;
+}
+
+#content {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.photo_table{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.clearfix::after {
+	height: 0px; clear: both; font-size: 0px; display: block; visibility: hidden; content: " ";
+}
+
+.clearfix {
+	display: inline-block;
+}
+
+.clearfix {
+	display: block; -ms-zoom: 1;
+}
+
+.long-shadow{
+   font-size: 26pt;
+   overflow: hidden;
+   margin: 15px 0;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s;
+}
+
+.popup.open {
+	opacity: 1;
+	visibility: visible;
+}
+
+.popup .popup_overlay {
+    position: absolute;
+    z-index: -1;
+    background: rgba(0, 0, 0, 0.75);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
+
+.popup .content {
+    margin-top: 10%;
+    text-align: center;
+    width: 100%;
+}
+
+.popup .popup_img {
+    max-width: 90%;
+    max-height: 70vh;
+}
+
+@media screen and (max-width:768px){
+  .col-4 {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .img_item {
+    width: 100%;
+  }
+}

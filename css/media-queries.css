@@ -1,0 +1,33 @@
+@media screen and (max-width:980px)
+{
+#pagewrap {
+	width: 95%;
+}
+#content {
+	padding: 3% 4%; width: auto;
+}
+}
+@media screen and (max-width:650px)
+{
+#header {
+	height: auto;
+}
+#main-nav {
+	position: static;
+}
+#site-description {
+	margin: 0px 0px 15px; position: static;
+}
+#content {
+	margin: 20px 0px; width: auto; float: none;
+}
+}
+@media screen and (max-width:480px)
+{
+html {
+	-webkit-text-size-adjust: none;
+}
+#main-nav a {
+	padding: 10px 8px; font-size: 90%;
+}
+}
